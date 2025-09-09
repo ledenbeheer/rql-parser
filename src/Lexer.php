@@ -13,7 +13,7 @@ class Lexer
     /**
      * @param SubLexerInterface $subLexer
      */
-    public function __construct(SubLexerInterface $subLexer = null)
+    public function __construct(?SubLexerInterface $subLexer = null)
     {
         $this->subLexer = $subLexer ?: static::createDefaultSubLexer();
     }

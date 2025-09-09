@@ -15,7 +15,7 @@ class Parser
     /**
      * @param NodeParserInterface $nodeParser
      */
-    public function __construct(NodeParserInterface $nodeParser = null)
+    public function __construct(?NodeParserInterface $nodeParser = null)
     {
         $this->nodeParser = $nodeParser ?: static::createDefaultNodeParser();
     }
